@@ -1,0 +1,94 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  background-color: rgb(204, 211, 218);
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 10px;
+  align-items:center;
+}
+
+.header h4{
+  color: rgb(175, 98, 158);
+}
+.header button{
+  background-color: rgb(204, 77, 77);
+  border: 0px;
+  padding:6px;
+  color:white
+}
+.main {
+  width: 500px;
+  margin-top: 12px;
+}
+.main .todo-header {
+  background-color: rgb(175, 98, 158);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.main .todo-body {
+  background-color: white;
+  padding: 10px;
+}
+
+.main .todo-body .task{
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid rgb(175, 98, 158);
+    width:100%;
+    margin-bottom: 20px;
+    
+}
+
+.main .todo-body ul {
+  list-style: none;
+}
+
+.main .todo-body ul div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.main .todo-body ul div input {
+  margin-right: 5px;
+}
+
+.main .todo-body ul div span {
+  color: rgb(204, 77, 77);
+  position: relative;
+  left: 20em;
+  display: none;
+  cursor: pointer;
+}
+
+.main .todo-body ul div:hover span {
+  display: flex;
+}
+.completed {
+  text-decoration: line-through;
+}
